@@ -1,0 +1,127 @@
+/* Baseball Styles! */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+p {
+  border: 1px solid gray;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2px 10px;
+  width: 26px;
+}
+
+.away-team p,
+.home-team p {
+  border: none;
+  margin: 0;
+}
+
+span {
+  visibility: hidden;
+}
+
+/* Grid Styling */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.box-score {
+  background-color: #363441;
+  display: grid;
+  grid-template-columns: auto 140px 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 12px;
+  justify-content: left;
+}
+
+.away-pitcher,
+.home-pitcher {
+  display: flex;
+  align-items: center;
+}
+
+.away-team,
+.home-team {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  border: 1px solid gray;
+  margin: 4px;
+  padding-left: 5px;
+}
+
+.innings,
+.away-scores,
+.home-scores {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.rhe,
+.away-totals,
+.home-totals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.empty {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  grid-area: 1/1/2/3;
+}
+
+.innings {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  grid-area: 1/3/2/4;
+}
+
+.rhe {
+  border: 2px solid white;
+  border-right: none;
+  grid-area: 1/4/2/5;
+}
+
+.away-team {
+  grid-area: 2/2/3/3;
+}
+
+.away-scores {
+  grid-area: 2/3/3/4;
+}
+
+.away-totals {
+  border-left: 2px solid white;
+  grid-area: 2/4/3/5;
+}
+
+.home-team {
+  grid-area: 3/2/4/3;
+}
+
+.home-scores {
+  grid-area: 3/3/4/4;
+}
+
+.home-totals {
+  border-left: 2px solid white;
+  grid-area: 3/4/4/5;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
