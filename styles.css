@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+body {
+  background-color: #30673D;
+}
+
 p {
   border: 1px solid gray;
   color: white;
@@ -23,6 +27,22 @@ span {
   visibility: hidden;
 }
 
+/* Stacked Border Styling */
+
+.yellow-border {
+  border: 8px solid #FDCA06;
+  border-radius: 40px 40px 0 0;
+}
+
+.green-border {
+  border: 20px solid #30673D;
+  border-radius: 40px 40px 0 0;
+}
+
+.green-border {
+
+}
+
 /* Grid Styling */
 
 .container {
@@ -35,6 +55,7 @@ span {
 
 .box-score {
   background-color: #363441;
+  border: 2px solid rgb(76, 209, 76);
   display: grid;
   grid-template-columns: auto 140px 1fr auto;
   grid-template-rows: 1fr 1fr 1fr;
